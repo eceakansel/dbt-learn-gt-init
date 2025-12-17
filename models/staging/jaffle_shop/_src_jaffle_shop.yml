@@ -5,7 +5,11 @@ sources:
     tables:
       - name: customers
         description: "Customer information"
-
+        columns:
+        - name: id
+          data_tests:
+            - unique
+            - not_null
       - name: orders
         description: "Order information"
         config:
