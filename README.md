@@ -90,6 +90,8 @@ file_format = (
     skip_header = 1
     );
 
+grant ownership on schema analytics.dbt_eakansel to role transformer;
+
 -- 6. Verification Queries
 select * from raw.jaffle_shop.customers; 
 select * from raw.jaffle_shop.orders; 
